@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section id="main">
+    <div id="main">
         <div class="container">
             <nav>
                 <img src="./img/logo1.png" alt="" class="logo">
@@ -18,6 +18,7 @@
                     <li><a href="#">Contact</a></li>
                     <li><button class="btn btn-secondary">8888888888</button></li>
                 </ul>
+                <img src="./img/menu.svg" alt="" class="menu-btn">
             </nav>
 
             <div class="main-content">
@@ -29,7 +30,7 @@
                 <button class="btn btn-primary">Get Started</button>
             </div>
         </div>
-    </section>
+    </div>
     <section id="services">
         <div class="container">
             <div class="section-title">
@@ -72,7 +73,6 @@
                 but a legacy for the future."
             </h1>
             <div class="profile">
-                <img src="./img/profile.png" alt="">
                 <h4>Harish Pandiri</h4>
             </div>
         </div>
@@ -121,5 +121,13 @@
             <p>Love Nature</p>
         </div>
     </footer>
+    <script>
+        const navBtn = document.querySelector(".menu-btn");
+        const navList = document.querySelector(".nav-list");
+
+        navBtn.addEventListener("click", function () {
+            navList.classList.toggle("active");
+        });
+    </script>
   </body>
 </html>
